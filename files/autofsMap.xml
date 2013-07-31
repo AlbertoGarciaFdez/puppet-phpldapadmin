@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE template SYSTEM "template.dtd">
+<template>
+<title>Automount Map</title>
+<!--<regexp>^$</regexp>-->
+<icon>images/star.png</icon>
+<description>Create a new automount map</description>
+<rdn>cn</rdn>
+<visible>1</visible>
+
+<objectClasses>
+<objectClass id="automount"></objectClass>
+</objectClasses>
+
+<attributes>
+<attribute id="cn">
+        <display>Common Name</display>
+        <onchange>autoFill:automountInformation,number1.flychip.org.uk:/export/home/%cn%</onchange>
+        <order>1</order>
+        <page>1</page>
+</attribute>
+<attribute id="automountInformation">
+        <display>Automount Information</display>
+        <order>2</order>
+        <page>1</page>
+</attribute>
+</attributes>
+</template>
