@@ -3,8 +3,7 @@
 <template>
 <title>Automount Map</title>
 <!--<regexp>^$</regexp>-->
-<icon>images/star.png</icon>
-<description>Create a new automount map</description>
+<description>Create a map for AutoFS</description>
 <rdn>cn</rdn>
 <visible>1</visible>
 
@@ -15,11 +14,10 @@
 <attributes>
 <attribute id="cn">
         <display>Common Name</display>
-        <onchange>autoFill:automountInformation,number1.flychip.org.uk:/export/home/%cn%</onchange>
         <order>1</order>
         <page>1</page>
 </attribute>
-<attribute id="automountInformation">
+<attribute id="mount_info">
         <display>Automount Information</display>
         <order>2</order>
         <page>1</page>
