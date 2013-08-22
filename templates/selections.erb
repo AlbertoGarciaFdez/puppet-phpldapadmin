@@ -1,0 +1,7 @@
+phpldapadmin    phpldapadmin/restart-webserver  boolean true
+phpldapadmin    phpldapadmin/ldap-tls   boolean false
+phpldapadmin    phpldapadmin/ldap-binddn        string  <%= scope.lookupvar('phpldapadmin::root_dn') %>
+phpldapadmin    phpldapadmin/reconfigure-webserver      multiselect
+phpldapadmin    phpldapadmin/ldap-basedn        string  <%= scope.lookupvar('phpldapadmin::base_dn') %>
+phpldapadmin    phpldapadmin/ldap-server        string  <%= scope.lookupvar('phpldapadmin::ip_server') %>
+phpldapadmin    phpldapadmin/ldap-authtype      select  session
